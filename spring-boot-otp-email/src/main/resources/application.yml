@@ -1,0 +1,37 @@
+spring:
+   jpa:
+    database: MYSQL
+    show-sql: true
+    hibernate:
+      ddl-auto: none
+      dialect: org.hibernate.dialect.MySQLDialect
+      
+   datasource:
+        url: jdbc:mysql://spinxodb.c6ylyk9lhaqa.ap-south-1.rds.amazonaws.com:3306/consuldb
+        username: spinxo
+        password: 123456789
+        driver-class-name: com.mysql.jdbc.Driver
+        maxActive: 10
+        max-idle: 5
+        min-idle: 1
+        testWhileIdle: true
+        test-on-borrow: true
+        validationQuery: SELECT 1
+        timeBetweenEvictionRunsMillis: 5000
+        min-evictable-idle-time-millis: 60000
+
+
+jwt:
+    header: Authorization
+    secret: SpringBootSecretKey
+    expiration: 300
+
+server:
+    port: 8081
+
+email:
+  host: smtp.gmail.com
+  port: 587
+  username: rasystemnotification@gmail.com
+  password: rasystem123!
+  debug: true
