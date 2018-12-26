@@ -32,6 +32,6 @@ server:
 email:
   host: smtp.gmail.com
   port: 587
-  username: rasystemnotification@gmail.com
-  password: rasystem123!
+  username: mhari.techie@gmail.com
+  password: 09g81a0505
   debug: true
